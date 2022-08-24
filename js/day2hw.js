@@ -43,7 +43,7 @@ class User {
     passwordChange(password, newpassword) {
         if (this.password === password) {
             password = newpassword;
-            return password
+            return `Your new password of "${password} is totally more secure. Grats nerd."`
         } else {
             return "-1000 Who's Line? points for you."
         }
@@ -54,7 +54,7 @@ class User {
 let brian = new User("Brian Stanton", "Coolx2");
 console.log(brian.welcomeUser());
 console.log(brian.passwordCheck('Coolx2'));
-console.log(brian.passwordChange('Coolx2', 'Coolx4'))
+console.log(brian.passwordChange('Coolx2', 'Coolx4'));
 
 
 /*
