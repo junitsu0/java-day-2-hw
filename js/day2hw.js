@@ -43,7 +43,7 @@ class User {
     passwordChange(password, newpassword) {
         if (this.password === password) {
             password = newpassword;
-            return `Your new password of "${password} is totally more secure. Grats nerd."`
+            return `Your new password of "${password}" is totally more secure. Grats nerd.`
         } else {
             return "-1000 Who's Line? points for you."
         }
